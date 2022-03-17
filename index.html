@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jakub Maciejewski">
+    <title>Kalkulator</title>
+    <script src="Calc.class.js"></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc">
+        <div class="screen">
+          <div class="number-top"></div>
+          <div class="operation"></div>
+          <div class="number-bottom"></div>
+        </div>
+        <div class="tiles" >
+          <button class="tile action-tile" data-action="square">
+            <span>x<sup>2</sup></span>
+          </button>
+          <button class="tile action-tile" data-action="squareRoot">√x</button>
+          <button class="tile action-tile" data-action="clear">C</button>
+          <button class="tile action-tile" data-action="return">&lt;-</button>
+          <button class="tile number-tile">7</button>
+          <button class="tile number-tile">8</button>
+          <button class="tile number-tile">9</button>
+          <button class="tile action-tile" data-action="add">+</button>
+          <button class="tile number-tile">4</button>
+          <button class="tile number-tile">5</button>
+          <button class="tile number-tile">6</button>
+          <button class="tile action-tile" data-action="subtract">-</button>
+          <button class="tile number-tile">1</button>
+          <button class="tile number-tile">2</button>
+          <button class="tile number-tile">3</button>
+          <button class="tile action-tile" data-action="multiply">x</button>
+          <button class="tile action-tile" data-action="negate">+ / -</button>
+          <button class="tile number-tile">0</button>
+          <button class="tile action-tile" data-action="point">,</button>
+          <button class="tile action-tile" data-action="divide">/</button>
+          <button
+            class="tile action-tile calculate-tile"
+            data-action="calculate"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
